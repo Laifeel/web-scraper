@@ -1,0 +1,22 @@
+# Запустите парсер (соберёт данные с 2 страниц)
+python parser.py --pages 2
+
+# Базовый запуск (топ-10 самых дешёвых книг)
+python analyze.py
+
+# Книги дешевле £30
+python analyze.py --max_price 30
+
+# Книги с рейтингом 4+ звёзды
+python analyze.py --min_rating 4
+
+# Поиск слова "the" в названии
+python analyze.py --keyword the
+
+# Комбинированный фильтр
+python analyze.py --max_price 40 --min_rating 3 --top 5
+
+# Сортировка по рейтингу (лучшие книги сверху)
+python analyze.py --sort rating --order desc
+
+
